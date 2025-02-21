@@ -1,38 +1,149 @@
-.App {
+/* Beautiful gradient background for the entire page */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container for the form */
+.auth-container {
+  max-width: 400px;
+  width: 100%;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Form heading */
+.auth-container h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Form group (label + input) */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+  position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Labels */
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Input fields */
+.form-group input {
+  width: 100%;
+  padding: 12px 12px 12px 40px; /* Add padding for the icon */
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input field focus state */
+.form-group input:focus {
+  border-color: #6a11cb;
+  outline: none;
+  box-shadow: 0 0 8px rgba(106, 17, 203, 0.5);
+}
+
+/* Icons for input fields */
+.form-group .icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #6a11cb;
+}
+
+/* Submit button */
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #6a11cb;
   color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+/* Submit button hover state */
+.submit-btn:hover {
+  background-color: #2575fc;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Toggle button (switch between login and signup) */
+.toggle-btn {
+  background: none;
+  border: none;
+  color: #6a11cb;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: color 0.3s ease;
+}
+
+/* Toggle button hover state */
+.toggle-btn:hover {
+  color: #2575fc;
+  text-decoration: underline;
+}
+
+/* Error messages */
+.error-messages {
+  margin-bottom: 15px;
+}
+
+.error-messages .error {
+  color: #dc3545;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 480px) {
+  .auth-container {
+    margin: 20px;
+    padding: 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .auth-container h2 {
+    font-size: 24px;
+  }
+
+  .form-group input {
+    padding: 10px 10px 10px 35px; /* Adjust padding for smaller screens */
+  }
+
+  .form-group .icon {
+    font-size: 18px;
+  }
+
+  .submit-btn {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .toggle-btn {
+    font-size: 12px;
+    margin-top: 10px;
   }
 }
