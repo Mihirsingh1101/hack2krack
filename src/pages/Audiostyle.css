@@ -58,16 +58,7 @@
   width: 209.56px;
 }
 
-.lyfre-index .image {
-  background-image: url(./image.png);
-  background-position: 50% 50%;
-  background-size: cover;
-  height: 64px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 64px;
-}
+
 
 .lyfre-index .link-lyfeindex {
   color: #000000;
@@ -285,7 +276,7 @@
   height: 577px;
   left: 44px;
   position: absolute;
-  top: 291px;
+  top: 387px;
   width: 252px;
 }
 
@@ -342,16 +333,7 @@
   width: 414px;
 }
 
-.lyfre-index .image-4 {
-  background-image: url(./image-2.png);
-  background-position: 50% 50%;
-  background-size: cover;
-  height: 64px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 64px;
-}
+
 
 .lyfre-index .link-lyfeindex-2 {
   color: #ffffff;

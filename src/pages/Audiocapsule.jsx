@@ -1,21 +1,21 @@
 import React from "react";
-import arrow1 from "./arrow-1.svg";
-import arrow2 from "./arrow-2.svg";
-import arrow3 from "./arrow-3.svg";
-import arrow4 from "./arrow-4.svg";
-import arrow5 from "./arrow-5.svg";
-import arrowRight11 from "./arrow-right-1-1.svg";
-import camera from "./camera.svg";
-import image8 from "./image-8.png";
-import image9 from "./image-9.png";
-import image10 from "./image-10.png";
-import rectangle27 from "./rectangle-27.svg";
-import share from "./share.svg";
-import "./style.css";
-import upload from "./upload.svg";
-import vector32 from "./vector-32.svg";
+import arrow1 from "../assets/arrow-1.svg";
+import arrow2 from "../assets/arrow-2.svg";
+import arrow3 from "../assets/arrow-3.svg";
+import arrow4 from "../assets/arrow-4.svg";
+import arrow5 from "../assets/arrow-5.svg";
+import arrowRight11 from "../assets/arrow-right-1-1.svg";
+import camera from "../assets/camera.svg";
+import image8 from "../assets/image-8.svg";
+import image9 from "../assets/image-9.svg";
+import image10 from "../assets/image-10.svg";
+import rectangle27 from "../assets/rectangle-27.svg";
+import share from "../assets/share.svg";
+import "./Audiostyle.css";
+import upload from "../assets/upload.svg";
+import vector32 from "../assets/vector-32.svg";
 
-export const LyfreIndex = () => {
+export const Audiocapsule = () => {
   return (
     <div className="lyfre-index">
       <div className="div">
@@ -188,3 +188,4 @@ export const LyfreIndex = () => {
     </div>
   );
 };
+export default Audiocapsule;
