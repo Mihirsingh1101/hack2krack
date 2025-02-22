@@ -270,26 +270,7 @@ const LandingPage = () => {
       {/* Carousel Section: Runs below the animated text */}
       <Carousel />
 
-      {/* Additional Dummy Content for Extra Length (if needed) */}      
-      <div style={{ padding: "40px", textAlign: "center" }}>
-        <h2 style={{ fontFamily: "Karla", fontSize: 28, marginBottom: "20px" }}>
-          Explore More
-        </h2>
-        <p style={{ fontFamily: "Karla", fontSize: 18, lineHeight: 1.6 }}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
-          nulla eu mi fringilla consequat. Suspendisse potenti. Cras egestas
-          felis at purus consectetur, sed vulputate turpis mollis. Proin a
-          condimentum massa. Vivamus ut erat sapien. Quisque in tincidunt
-          augue. Vestibulum ante ipsum primis in faucibus orci luctus et
-          ultrices posuere cubilia curae; Duis nec tortor non justo convallis
-          suscipit. Curabitur ullamcorper auctor neque, ac laoreet nisi
-          efficitur ut. Nulla facilisi.\n\nIn hac habitasse platea dictumst. Donec vel nulla eget neque
-          vestibulum posuere. Maecenas cursus consequat mi. Morbi et augue a
-          nibh pretium blandit. Integer auctor, sapien nec ultrices faucibus,
-          sapien elit viverra mauris, id tempus sapien nibh eget erat. Nam
-          commodo leo ac sapien dictum, at tristique ligula facilisis.
-        </p>
-      </div>
+      
     </div>
   );
 };
