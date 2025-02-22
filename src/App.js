@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Loginpage from "./components/auth";
-import MoviesPage from "./pages/MoviePage";
+import Imagecapsule from './pages/imagecapsule'
 
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Loginpage />} />
-        <Route path="/movies" element={<MoviesPage />} />
+        <Route path="/movies" element={<Imagecapsule />} />
       </Routes>
     </Router>
   );
