@@ -1,11 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import Imagecapsule from './pages/imagecapsule';
+import Videocapsule from './pages/Videocapsule';
+
 
 function App() {
   return (
     <div className="App">
-    <Imagecapsule/>
+    <Videocapsule/>
     </div>
   );
 }
