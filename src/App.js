@@ -1,11 +1,17 @@
-import './App.css';
-import AuthForm from './components/pages/AuthForm'; // Import AuthForm (default export)
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Loginpage from "./components/auth";
+import MoviesPage from "./pages/MoviePage";
+
 
 function App() {
   return (
-    <div className="App">
-      <AuthForm />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Loginpage />} />
+        <Route path="/movies" element={<MoviesPage />} />
+      </Routes>
+    </Router>
   );
 }
 
