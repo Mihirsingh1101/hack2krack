@@ -1,21 +1,19 @@
 import React from "react";
-import arrow1 from "https://upload.wikimedia.org/wikipedia/commons/e/e2/Arrow_icon.png";
-import arrow2 from "https://upload.wikimedia.org/wikipedia/commons/e/e2/Arrow_icon.png";
-import arrow3 from "https://upload.wikimedia.org/wikipedia/commons/e/e2/Arrow_icon.png";
-import arrow4 from "https://upload.wikimedia.org/wikipedia/commons/e/e2/Arrow_icon.png";
-import arrow5 from "https://upload.wikimedia.org/wikipedia/commons/e/e2/Arrow_icon.png";
-import arrowRight11 from "../assets/arrow-right.svg";
-import camera from "https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg";
-import image8 from "https://source.unsplash.com/200x200/?music";
-import image9 from "https://source.unsplash.com/200x200/?sound";
-import image10 from "https://source.unsplash.com/200x200/?audio";
-import rectangle27 from "https://upload.wikimedia.org/wikipedia/commons/3/3f/Rectangle_example.png";
-import share from "https://upload.wikimedia.org/wikipedia/commons/3/3f/Share-icon.svg";
+import arrow1 from "../assets/arrow-1.svg";
+import arrow2 from "../assets/arrow-2.svg";
+import arrow3 from "../assets/arrow-3.svg";
+import arrow4 from "../assets/arrow-4.svg";
+import arrow5 from "../assets/arrow-5.svg";
+import arrowRight11 from "../assets/arrow-right-1-1.svg";
+import camera from "../assets/camera.svg";
+import image8 from "../assets/image-8.svg";
+import image9 from "../assets/image-9.svg";
+import image10 from "../assets/image-10.svg";
+import rectangle27 from "../assets/rectangle-27.svg";
+import share from "../assets/share.svg";
 import "./Audiostyle.css";
-import upload from "https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png";
-import vector32 from "https://upload.wikimedia.org/wikipedia/commons/4/42/Light_blue_background.png";
-
-
+import upload from "../assets/upload.svg";
+import vector32 from "../assets/vector-32.svg";
 
 export const Audiocapsule = () => {
   return (
@@ -190,6 +188,4 @@ export const Audiocapsule = () => {
     </div>
   );
 };
-
-export default Audiocapsule; // Ensure your component is named correctly
-
+export default Audiocapsule;
