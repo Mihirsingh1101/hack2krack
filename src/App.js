@@ -1,8 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Landingpage from './pages/landingpage'
 import Loginpage from "./components/auth";
 import Imagecapsule from './pages/imagecapsule'
 
+import Profile from './pages/profile'
 
 function App() {
   return (
