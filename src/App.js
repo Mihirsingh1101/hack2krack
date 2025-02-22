@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import LyfreIndex from './pages/Audiocapsule';
+import LyfreIndex from './pages/Collaborativecapsule';
 
 
 function App() {

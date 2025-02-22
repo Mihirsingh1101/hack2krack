@@ -27,7 +27,7 @@
 }
 
 .lyfre-index .overlap {
-  height: 1295px;
+  height: 1241px;
   left: -224px;
   position: absolute;
   top: -257px;
@@ -59,7 +59,7 @@
 }
 
 .lyfre-index .image {
-  background-image: url("https://source.unsplash.com/400x300/?nature");
+  background-image: url(./image.png);
   background-position: 50% 50%;
   background-size: cover;
   height: 64px;
@@ -199,7 +199,7 @@
 }
 
 .lyfre-index .overlap-2 {
-  height: 868px;
+  height: 814px;
   left: 329px;
   position: absolute;
   top: 427px;
@@ -268,7 +268,7 @@
   width: 194px;
 }
 
-.lyfre-index .p {
+.lyfre-index .text-wrapper-7 {
   color: #000000;
   font-family: "Karla-Regular", Helvetica;
   font-size: 96px;
@@ -282,23 +282,23 @@
 }
 
 .lyfre-index .rectangle {
-  height: 577px;
-  left: 44px;
+  height: 398px;
+  left: 0;
   position: absolute;
   top: 291px;
-  width: 252px;
+  width: 296px;
 }
 
-.lyfre-index .text-wrapper-7 {
+.lyfre-index .text-wrapper-8 {
   color: #ffffff;
   font-family: "Karla-Regular", Helvetica;
   font-size: 64px;
   font-weight: 400;
-  left: 102px;
+  left: 90px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
-  top: 754px;
+  top: 607px;
   white-space: nowrap;
   width: 136px;
 }
@@ -343,7 +343,7 @@
 }
 
 .lyfre-index .image-4 {
-  background-image: url("https://source.unsplash.com/400x300/?ocean");
+  background-image: url(./image-2.png);
   background-position: 50% 50%;
   background-size: cover;
   height: 64px;
@@ -368,7 +368,7 @@
   width: 144px;
 }
 
-.lyfre-index .text-wrapper-8 {
+.lyfre-index .p {
   align-self: stretch;
   color: #a6a6a6;
   font-family: "Inter-Medium", Helvetica;

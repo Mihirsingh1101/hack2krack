@@ -1,23 +1,21 @@
-import React from "react";
-import arrow1 from "https://upload.wikimedia.org/wikipedia/commons/e/e2/Arrow_icon.png";
-import arrow2 from "https://upload.wikimedia.org/wikipedia/commons/e/e2/Arrow_icon.png";
-import arrow3 from "https://upload.wikimedia.org/wikipedia/commons/e/e2/Arrow_icon.png";
-import arrow4 from "https://upload.wikimedia.org/wikipedia/commons/e/e2/Arrow_icon.png";
-import arrow5 from "https://upload.wikimedia.org/wikipedia/commons/e/e2/Arrow_icon.png";
-import arrowRight11 from "../assets/arrow-right.svg";
-import camera from "https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg";
-import image8 from "https://source.unsplash.com/200x200/?music";
-import image9 from "https://source.unsplash.com/200x200/?sound";
-import image10 from "https://source.unsplash.com/200x200/?audio";
-import rectangle27 from "https://upload.wikimedia.org/wikipedia/commons/3/3f/Rectangle_example.png";
-import share from "https://upload.wikimedia.org/wikipedia/commons/3/3f/Share-icon.svg";
-import "./Audiostyle.css";
-import upload from "https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png";
-import vector32 from "https://upload.wikimedia.org/wikipedia/commons/4/42/Light_blue_background.png";
+import arrow1 from "../assets/images/arrow-1.svg";
+import arrow2 from "../assets/images/arrow-2.svg";
+import arrow3 from "../assets/images/arrow-3.svg";
+import arrow4 from "../assets/images/arrow-4.svg";
+import arrow5 from "../assets/images/arrow-5.svg";
+import arrowRight from "../assets/images/arrow-right-1-1.svg";
+import camera from "../assets/images/camera.svg";
+import image8 from "../assets/images/image-8.png";
+import image9 from "../assets/images/image-9.png";
+import image10 from "../assets/images/image-10.png";
+import rectangle27 from "../assets/images/rectangle-27.svg";
+import share from "../assets/images/share.svg";
+import upload from "../assets/images/upload.svg";
+import vector32 from "../assets/images/vector-32.svg";
+import "../styles/CollaborativeStyle.css"; // Update your CSS file path
 
 
-
-export const Audiocapsule = () => {
+export const Collaborativecapsule = () => {
   return (
     <div className="lyfre-index">
       <div className="div">
@@ -69,11 +67,13 @@ export const Audiocapsule = () => {
 
             <img className="arrow-3" alt="Arrow" src={arrow3} />
 
-            <p className="p">Voices Fade, Memories in Sound Last Forever</p>
+            <div className="text-wrapper-7">
+              Capture your memories forever...
+            </div>
 
             <img className="rectangle" alt="Rectangle" src={rectangle27} />
 
-            <div className="text-wrapper-7">Add</div>
+            <div className="text-wrapper-8">Add</div>
           </div>
         </div>
 
@@ -87,7 +87,7 @@ export const Audiocapsule = () => {
                   <div className="link-lyfeindex-2">LyfeIndex</div>
                 </div>
 
-                <p className="text-wrapper-8">Get started now to try out!</p>
+                <p className="p">Get started now to try out!</p>
 
                 <div className="overlap-group-wrapper">
                   <div className="overlap-group-2">
@@ -184,12 +184,11 @@ export const Audiocapsule = () => {
         </div>
 
         <p className="text-wrapper-21">
-          “A voice once heard, a memory forever felt”
+          “Your memories deserve a place to rest. ”
         </p>
       </div>
     </div>
   );
 };
 
-export default Audiocapsule; // Ensure your component is named correctly
-
+export default Collaborativecapsule
