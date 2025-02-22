@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import Videocapsule from './pages/Videocapsule';
+import LyfreIndex from './pages/Audiocapsule';
 
 
 function App() {
   return (
     <div className="App">
-    <Videocapsule/>
+    <LyfreIndex/>
     </div>
   );
 }

@@ -1,0 +1,736 @@
+.lyfre-index {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.lyfre-index .div {
+  background-color: #ffffff;
+  height: 5522px;
+  overflow: hidden;
+  position: relative;
+  width: 1440px;
+}
+
+.lyfre-index .ellipse {
+  background-color: #54be96;
+  border-radius: 317px;
+  filter: blur(1000px);
+  height: 634px;
+  left: -264px;
+  opacity: 0.84;
+  position: absolute;
+  top: 4150px;
+  width: 634px;
+}
+
+.lyfre-index .overlap {
+  height: 1295px;
+  left: -224px;
+  position: absolute;
+  top: -257px;
+  width: 1934px;
+}
+
+.lyfre-index .overlap-group {
+  height: 634px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1564px;
+}
+
+.lyfre-index .frame {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  left: 324px;
+  position: absolute;
+  top: 311px;
+  width: 1240px;
+}
+
+.lyfre-index .group {
+  height: 64px;
+  position: relative;
+  width: 209.56px;
+}
+
+.lyfre-index .image {
+  background-image: url(./image.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 64px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 64px;
+}
+
+.lyfre-index .link-lyfeindex {
+  color: #000000;
+  font-family: "Italiana-Regular", Helvetica;
+  font-size: 36px;
+  font-weight: 400;
+  height: 42px;
+  left: 64px;
+  letter-spacing: 0;
+  line-height: 40px;
+  position: absolute;
+  top: 11px;
+  white-space: nowrap;
+  width: 144px;
+}
+
+.lyfre-index .navbar {
+  height: 22px;
+  position: relative;
+  width: 454px;
+}
+
+.lyfre-index .text-wrapper {
+  color: #000000;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+}
+
+.lyfre-index .text-wrapper-2 {
+  color: #a6a6a6;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  left: 91px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 2px;
+  white-space: nowrap;
+}
+
+.lyfre-index .text-wrapper-3 {
+  color: #a6a6a6;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  left: 192px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 2px;
+  white-space: nowrap;
+}
+
+.lyfre-index .text-wrapper-4 {
+  color: #a6a6a6;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  left: 263px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 2px;
+  white-space: nowrap;
+}
+
+.lyfre-index .text-wrapper-5 {
+  color: #a6a6a6;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  left: 337px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 2px;
+  white-space: nowrap;
+}
+
+.lyfre-index .div-wrapper {
+  align-items: center;
+  background-color: #2e9c5d;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  padding: 12px;
+  position: relative;
+  width: 107px;
+}
+
+.lyfre-index .text-wrapper-6 {
+  color: #ffffff;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.lyfre-index .ellipse-2 {
+  background-color: #52bda9;
+  border-radius: 317px;
+  filter: blur(1000px);
+  height: 634px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 634px;
+}
+
+.lyfre-index .vector {
+  height: 25px;
+  left: 679px;
+  position: absolute;
+  top: 554px;
+  width: 308px;
+}
+
+.lyfre-index .overlap-2 {
+  height: 868px;
+  left: 329px;
+  position: absolute;
+  top: 427px;
+  width: 1605px;
+}
+
+.lyfre-index .ellipse-3 {
+  background-color: #54be96;
+  border-radius: 317px;
+  filter: blur(1000px);
+  height: 634px;
+  left: 971px;
+  position: absolute;
+  top: 180px;
+  width: 634px;
+}
+
+.lyfre-index .img {
+  height: 284px;
+  left: 685px;
+  object-fit: cover;
+  position: absolute;
+  top: 383px;
+  width: 286px;
+}
+
+.lyfre-index .image-2 {
+  height: 270px;
+  left: 771px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 272px;
+}
+
+.lyfre-index .image-3 {
+  height: 300px;
+  left: 1012px;
+  object-fit: cover;
+  position: absolute;
+  top: 184px;
+  width: 302px;
+}
+
+.lyfre-index .arrow {
+  height: 72px;
+  left: 645px;
+  position: absolute;
+  top: 211px;
+  width: 173px;
+}
+
+.lyfre-index .arrow-2 {
+  height: 79px;
+  left: 1038px;
+  position: absolute;
+  top: 98px;
+  width: 172px;
+}
+
+.lyfre-index .arrow-3 {
+  height: 57px;
+  left: 946px;
+  position: absolute;
+  top: 517px;
+  width: 194px;
+}
+
+.lyfre-index .p {
+  color: #000000;
+  font-family: "Karla-Regular", Helvetica;
+  font-size: 96px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 249px;
+  width: 708px;
+}
+
+.lyfre-index .rectangle {
+  height: 577px;
+  left: 44px;
+  position: absolute;
+  top: 291px;
+  width: 252px;
+}
+
+.lyfre-index .text-wrapper-7 {
+  color: #ffffff;
+  font-family: "Karla-Regular", Helvetica;
+  font-size: 64px;
+  font-weight: 400;
+  left: 102px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 754px;
+  white-space: nowrap;
+  width: 136px;
+}
+
+.lyfre-index .frame-wrapper {
+  background-color: #161c28;
+  height: 394px;
+  left: 0;
+  position: absolute;
+  top: 5128px;
+  width: 1440px;
+}
+
+.lyfre-index .frame-2 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 75px;
+  left: 100px;
+  position: relative;
+  top: 55px;
+  width: 1240px;
+}
+
+.lyfre-index .frame-3 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 180px;
+  position: relative;
+  width: 100%;
+}
+
+.lyfre-index .frame-4 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  position: relative;
+  width: 414px;
+}
+
+.lyfre-index .image-4 {
+  background-image: url(./image-2.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 64px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 64px;
+}
+
+.lyfre-index .link-lyfeindex-2 {
+  color: #ffffff;
+  font-family: "Italiana-Regular", Helvetica;
+  font-size: 36px;
+  font-weight: 400;
+  height: 42px;
+  left: 64px;
+  letter-spacing: 0;
+  line-height: 40px;
+  position: absolute;
+  top: 11px;
+  white-space: nowrap;
+  width: 144px;
+}
+
+.lyfre-index .text-wrapper-8 {
+  align-self: stretch;
+  color: #a6a6a6;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  height: 28.1px;
+  letter-spacing: 0;
+  line-height: 30px;
+  position: relative;
+  white-space: nowrap;
+}
+
+.lyfre-index .overlap-group-wrapper {
+  height: 56.2px;
+  position: relative;
+  width: 412px;
+}
+
+.lyfre-index .overlap-group-2 {
+  border-radius: 70px;
+  height: 56px;
+  position: relative;
+  width: 410px;
+}
+
+.lyfre-index .text-wrapper-9 {
+  color: #a6a6a6;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  left: 20px;
+  letter-spacing: 0;
+  line-height: 30px;
+  position: absolute;
+  top: 14px;
+  white-space: nowrap;
+  width: 184px;
+}
+
+.lyfre-index .rectangle-2 {
+  border: 2px solid;
+  border-color: #a6a6a6;
+  border-radius: 70px;
+  height: 56px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 410px;
+}
+
+.lyfre-index .ellipse-4 {
+  background-color: #54bd95;
+  border-radius: 23px/21.54px;
+  height: 43px;
+  left: 357px;
+  position: absolute;
+  top: 7px;
+  width: 46px;
+}
+
+.lyfre-index .arrow-right {
+  height: 22px;
+  left: 368px;
+  position: absolute;
+  top: 17px;
+  width: 24px;
+}
+
+.lyfre-index .frame-5 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 70px;
+  position: relative;
+}
+
+.lyfre-index .frame-6 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  position: relative;
+  width: 175px;
+}
+
+.lyfre-index .text-wrapper-10 {
+  color: #ffffff;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  height: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: 108px;
+}
+
+.lyfre-index .text-wrapper-11 {
+  align-self: stretch;
+  color: #a6a6a6;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  height: 20.61px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+}
+
+.lyfre-index .frame-7 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  position: relative;
+  width: 152px;
+}
+
+.lyfre-index .text-wrapper-12 {
+  align-self: stretch;
+  color: #ffffff;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  height: 20.61px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+}
+
+.lyfre-index .frame-8 {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 19px;
+  position: relative;
+  width: 130px;
+}
+
+.lyfre-index .text-wrapper-13 {
+  align-self: stretch;
+  color: #a6a6a6;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  height: 20.61px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+}
+
+.lyfre-index .group-2 {
+  height: 108px;
+  position: relative;
+  width: 179px;
+}
+
+.lyfre-index .frame-9 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  width: 179px;
+}
+
+.lyfre-index .text-wrapper-14 {
+  align-self: stretch;
+  color: #ffffff;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  height: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+}
+
+.lyfre-index .text-wrapper-15 {
+  align-self: stretch;
+  color: #a6a6a6;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  height: 20px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+}
+
+.lyfre-index .frame-10 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  position: relative;
+  width: 1197px;
+}
+
+.lyfre-index .text-wrapper-16 {
+  color: #ffffff;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  height: 28.1px;
+  letter-spacing: 0;
+  line-height: 30px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: 425px;
+}
+
+.lyfre-index .group-3 {
+  height: 28.1px;
+  margin-right: -4px;
+  position: relative;
+  width: 335px;
+}
+
+.lyfre-index .text-wrapper-17 {
+  color: #ffffff;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 30px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  width: 185px;
+}
+
+.lyfre-index .ellipse-5 {
+  background-color: #a6a6a6;
+  border-radius: 2px/1.87px;
+  height: 4px;
+  left: 195px;
+  position: absolute;
+  top: 12px;
+  width: 4px;
+}
+
+.lyfre-index .text-wrapper-18 {
+  color: #ffffff;
+  font-family: "Inter-Medium", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  left: 209px;
+  letter-spacing: 0;
+  line-height: 30px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  width: 122px;
+}
+
+.lyfre-index .ellipse-6 {
+  background-color: #54be96;
+  border-radius: 317px;
+  filter: blur(1000px);
+  height: 634px;
+  left: 1071px;
+  position: absolute;
+  top: 2337px;
+  width: 634px;
+}
+
+.lyfre-index .frame-11 {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  left: 100px;
+  position: absolute;
+  top: 1809px;
+  width: 1240px;
+}
+
+.lyfre-index .frame-12 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+  width: 170px;
+}
+
+.lyfre-index .img-2 {
+  height: 72px;
+  position: relative;
+  width: 72px;
+}
+
+.lyfre-index .text-wrapper-19 {
+  align-self: stretch;
+  color: #000000;
+  font-family: "Space Grotesk-Bold", Helvetica;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 35.2px;
+  position: relative;
+  text-align: center;
+}
+
+.lyfre-index .arrow-4 {
+  height: 29.46px;
+  position: relative;
+  width: 190.07px;
+}
+
+.lyfre-index .frame-13 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+  width: 105px;
+}
+
+.lyfre-index .text-wrapper-20 {
+  align-self: stretch;
+  color: #000000;
+  font-family: "Space Grotesk-Bold", Helvetica;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 26.4px;
+  position: relative;
+  text-align: center;
+}
+
+.lyfre-index .frame-14 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+  width: 273px;
+}
+
+.lyfre-index .text-wrapper-21 {
+  color: #000000;
+  font-family: "Aclonica-Regular", Helvetica;
+  font-size: 64px;
+  font-weight: 400;
+  left: 119px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 1257px;
+  width: 1201px;
+}
