@@ -7,7 +7,7 @@ import TimeCapsule from "./pages/TimeCapsule";
 import StoriesCapsule from "./pages/StoriesCapsule"; // 📌 Create these capsule pages
 import ImageCapsule from "./pages/Imagecapsule";
 import VideoCapsule from "./pages/Videocapsule";
-import AudioCapsule from "./pages/AudioCapsule";
+import AudioCapsule from "./pages/Audiocapsule";
 import CollabCapsule from "./pages/CollabCapsule";
 
 function App() {
