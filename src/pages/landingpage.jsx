@@ -50,9 +50,9 @@ const TimeCapsuleProfile = () => {
       </div>
 
       <div style={{ width: '634px', height: '634px', left: '1076px', top: '350px', position: 'absolute', backgroundColor: '#54BE96', borderRadius: '9999px', filter: 'blur(1000px)' }}></div>
-      <img src="https://placehold.co/286x284" alt="Placeholder" style={{ width: '286.5px', height: '284.25px', left: '790px', top: '553px', position: 'absolute' }} />
-      <img src="https://placehold.co/272x270" alt="Placeholder" style={{ width: '272.25px', height: '270px', left: '876px', top: '170px', position: 'absolute' }} />
-      <img src="https://placehold.co/301x300" alt="Placeholder" style={{ width: '301.5px', height: '300px', left: '1117px', top: '354px', position: 'absolute' }} />
+      <img src="img1.jpg" alt="Placeholder" style={{ width: '286.5px', height: '284.25px', left: '790px', top: '553px', position: 'absolute' }} />
+      <img src="img2.jpg" alt="Placeholder" style={{ width: '272.25px', height: '270px', left: '876px', top: '170px', position: 'absolute' }} />
+      <img src="img3.jpg" alt="Placeholder" style={{ width: '301.5px', height: '300px', left: '1117px', top: '354px', position: 'absolute' }} />
     </div>
   );
 };

@@ -22,7 +22,9 @@ function App() {
         <Route path="/capsule/image" element={<ImageCapsule />} />
         <Route path="/capsule/video" element={<VideoCapsule />} />
         <Route path="/capsule/audio" element={<AudioCapsule />} />
-        <Route path="/capsule/collab" element={<CollabCapsule />} />
+        <Route path="/capsule/collab" element={ <div style={{ width: "100vw", height: "100vh", background: "black" }}>
+      <CollabCapsule/>
+    </div>} />
       </Routes>
     </Router>
   );
