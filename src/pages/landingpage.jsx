@@ -1,6 +1,9 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
 
 const TimeCapsuleProfile = () => {
+  const navigate = useNavigate();
+
   return (
     <div style={{ width: '1440px', height: '1024px', backgroundColor: 'white', position: 'relative' }}>
       {/* Header Section */}
@@ -11,11 +14,15 @@ const TimeCapsuleProfile = () => {
         <div style={{ fontSize: '18px', fontFamily: 'Inter', fontWeight: '500', color: 'black' }}>
           Home
         </div>
-        <div style={{ width: '137px', height: '43px', padding: '12px', backgroundColor: '#2E9C5D', borderRadius: '12px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <div style={{ fontSize: '14px', fontFamily: 'Inter', fontWeight: '500', color: 'white' }}>
-            Sign up/Log in
-          </div>
-        </div>
+        <div style={{ textAlign: "center", padding: "50px" }}>
+      <h1>Welcome to the Time Capsule App</h1>
+      <button 
+        style={{ padding: "10px 20px", backgroundColor: "#2E9C5D", color: "white", border: "none", cursor: "pointer" }} 
+        onClick={() => navigate("/login")}
+      >
+        Sign up / Log in
+      </button>
+    </div>
       </div>
 
       {/* Main Content */}
@@ -27,7 +34,7 @@ const TimeCapsuleProfile = () => {
           A place to remember, share, and cherish the stories of those we've loved.
         </div>
         <div style={{ display: 'flex', gap: '38px' }}>
-          <div style={{ padding: '20px 30px', backgroundColor: '#2E9C5D', borderRadius: '40px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <div style={{ padding: '20px 30px', backgroundColor: '#2E9C5D', borderRadius: '40px', display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }}>
             <div style={{ fontSize: '18px', fontFamily: 'Inter', fontWeight: '500', color: 'white' }}>
               Get started
             </div>

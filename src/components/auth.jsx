@@ -1,30 +1,41 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { TextField, Button, Container, Typography, Box } from "@mui/material";
 import { auth, gProvider } from "../firebase/firebase";
-import { createUserWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
-// import { getDocs, collection, addDoc } from "firebase/firestore";
-import { useNavigate } from "react-router-dom"; // ✅ Import useNavigate
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
 
 const Loginpage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const navigate = useNavigate(); // ✅ Hook for navigation
+  const navigate = useNavigate();
 
   const signIn = async () => {
     try {
-      await createUserWithEmailAndPassword(auth, email, password);
-      navigate("/movies"); // ✅ Redirect after login
+      await signInWithEmailAndPassword(auth, email, password); // ✅ Correct function for existing users
+      navigate("/Profile"); // ✅ Redirect after successful login
     } catch (error) {
       console.error("Error signing in:", error.message);
+      alert("Login failed. Check your email and password.");
+    }
+  };
+
+  const signUp = async () => {
+    try {
+      await createUserWithEmailAndPassword(auth, email, password); // ✅ Correct function for new users
+      navigate("/Profile"); // ✅ Redirect after sign-up
+    } catch (error) {
+      console.error("Error signing up:", error.message);
+      alert("Sign-up failed. Email might be already in use.");
     }
   };
 
   const signInWithGoogle = async () => {
     try {
       await signInWithPopup(auth, gProvider);
-      navigate("/movies"); // ✅ Redirect after Google login
+      navigate("/Profile"); // ✅ Redirect after Google login
     } catch (error) {
       console.error("Error signing in:", error.message);
+      alert("Google sign-in failed.");
     }
   };
 
@@ -35,6 +46,7 @@ const Loginpage = () => {
         <TextField fullWidth label="Email" variant="outlined" margin="normal" value={email} onChange={(e) => setEmail(e.target.value)} />
         <TextField fullWidth label="Password" type="password" variant="outlined" margin="normal" value={password} onChange={(e) => setPassword(e.target.value)} />
         <Button type="button" fullWidth variant="contained" color="primary" style={{ marginTop: "16px" }} onClick={signIn}>Sign In</Button>
+        <Button type="button" fullWidth variant="contained" color="success" style={{ marginTop: "16px" }} onClick={signUp}>Sign Up</Button>
         <Button type="button" fullWidth variant="contained" color="secondary" style={{ marginTop: "16px" }} onClick={signInWithGoogle}>Sign in with Google</Button>
       </Box>
     </Container>
