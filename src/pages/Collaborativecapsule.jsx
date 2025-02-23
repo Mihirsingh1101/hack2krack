@@ -1,18 +1,19 @@
-import arrow1 from "../assets/images/arrow-1.svg";
-import arrow2 from "../assets/images/arrow-2.svg";
-import arrow3 from "../assets/images/arrow-3.svg";
-import arrow4 from "../assets/images/arrow-4.svg";
-import arrow5 from "../assets/images/arrow-5.svg";
-import arrowRight from "../assets/images/arrow-right-1-1.svg";
-import camera from "../assets/images/camera.svg";
-import image8 from "../assets/images/image-8.png";
-import image9 from "../assets/images/image-9.png";
-import image10 from "../assets/images/image-10.png";
-import rectangle27 from "../assets/images/rectangle-27.svg";
-import share from "../assets/images/share.svg";
-import upload from "../assets/images/upload.svg";
-import vector32 from "../assets/images/vector-32.svg";
-import "../styles/CollaborativeStyle.css"; // Update your CSS file path
+import arrow1 from "../assets/arrow-1.svg";
+import arrow2 from "../assets/arrow-2.svg";
+import arrow3 from "../assets/arrow-3.svg";
+import arrow4 from "../assets/arrow-4.svg";
+import arrow5 from "../assets/arrow-5.svg";
+import arrowRight from "../assets/arrow-right-1-1.svg";
+import camera from "../assets/camera.svg";
+import image8 from "../assets/image-8.svg";
+import image9 from "../assets/image-9.svg";
+import image10 from "../assets/image-10.svg";
+import rectangle27 from "../assets/rectangle-27.svg";
+import share from "../assets/share.svg";
+import upload from "../assets/upload.svg";
+import vector32 from "../assets/vector-32.svg";
+import "./Collaborativecapsule.css"; // Fixed CSS import path
+
 
 
 export const Collaborativecapsule = () => {
@@ -100,7 +101,7 @@ export const Collaborativecapsule = () => {
                     <img
                       className="arrow-right"
                       alt="Arrow right"
-                      src={arrowRight11}
+                      src={arrowRight}
                     />
                   </div>
                 </div>

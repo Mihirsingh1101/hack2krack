@@ -58,16 +58,7 @@
   width: 209.56px;
 }
 
-.lyfre-index .image {
-  background-image: url(./image.png);
-  background-position: 50% 50%;
-  background-size: cover;
-  height: 64px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 64px;
-}
+
 
 .lyfre-index .link-lyfeindex {
   color: #000000;
@@ -226,23 +217,9 @@
   width: 286px;
 }
 
-.lyfre-index .image-2 {
-  height: 270px;
-  left: 771px;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  width: 272px;
-}
 
-.lyfre-index .image-3 {
-  height: 300px;
-  left: 1012px;
-  object-fit: cover;
-  position: absolute;
-  top: 184px;
-  width: 302px;
-}
+
+
 
 .lyfre-index .arrow {
   height: 72px;
@@ -342,16 +319,7 @@
   width: 414px;
 }
 
-.lyfre-index .image-4 {
-  background-image: url(./image-2.png);
-  background-position: 50% 50%;
-  background-size: cover;
-  height: 64px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 64px;
-}
+
 
 .lyfre-index .link-lyfeindex-2 {
   color: #ffffff;
