@@ -1,12 +1,16 @@
-import React from 'react';
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import { Button } from "@mui/material";
 
 const TimeCapsuleDashboard = () => {
+  const navigate = useNavigate(); // ✅ Hook for navigation
+
   const capsuleData = [
-    { type: 'STORIES', imgSrc: 'https://placehold.co/231x150?text=Stories' },
-    { type: 'IMAGE', imgSrc: 'https://placehold.co/231x150?text=Image' },
-    { type: 'VIDEO', imgSrc: 'https://placehold.co/231x150?text=Video' },
-    { type: 'AUDIO', imgSrc: 'https://placehold.co/231x150?text=Audio' },
-    { type: 'COLLAB', imgSrc: 'https://placehold.co/231x150?text=Collab' },
+    { type: "STORIES", route: "/capsule/stories" },
+    { type: "IMAGE", route: "/capsule/image" },
+    { type: "VIDEO", route: "/capsule/video" },
+    { type: "AUDIO", route: "/capsule/audio" },
+    { type: "COLLAB", route: "/capsule/collab" },
   ];
 
   const positions = [
@@ -18,134 +22,50 @@ const TimeCapsuleDashboard = () => {
   ];
 
   return (
-    <div style={{ width: 1437, height: 1024, position: 'relative', background: 'white' }}>
-      <div
-        style={{
-          width: 1240,
-          height: 57,
-          left: 100,
-          top: 54,
-          position: 'absolute',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          display: 'flex',
-        }}
-      >
-        <div
-          style={{
-            width: 205,
-            height: 42,
-            color: 'black',
-            fontSize: 36,
-            fontFamily: 'Italiana',
-            fontWeight: '400',
-            lineHeight: '40px',
-          }}
-        >
-          Time capsule
-        </div>
-        <div
-          style={{
-            color: 'black',
-            fontSize: 18,
-            fontFamily: 'Inter',
-            fontWeight: '700',
-          }}
-        >
-          Dashboard
-        </div>
-        <div
-          style={{
-            width: 137,
-            height: 43,
-            padding: 12,
-            background: '#2E9C5D',
-            borderRadius: 12,
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}
-        >
-          <div
-            style={{
-              color: 'white',
-              fontSize: 14,
-              fontFamily: 'Inter',
-              fontWeight: '500',
-            }}
-          >
-            Sign up/Log in
-          </div>
+    <div style={{ width: 1437, height: 1024, position: "relative", background: "white" }}>
+      {/* Header */}
+      <div style={{ width: 1240, height: 57, left: 100, top: 54, position: "absolute", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <div style={{ fontSize: 36, fontFamily: "Italiana", fontWeight: "400", lineHeight: "40px" }}>Time capsule</div>
+        <div style={{ fontSize: 18, fontFamily: "Inter", fontWeight: "700" }}>Dashboard</div>
+        <div style={{ width: 137, height: 43, padding: 12, background: "#2E9C5D", borderRadius: 12, display: "flex", justifyContent: "center", alignItems: "center" }}>
+          <div style={{ color: "white", fontSize: 14, fontFamily: "Inter", fontWeight: "500" }}>Sign up/Log in</div>
         </div>
       </div>
-      <div
-        style={{
-          width: 711,
-          height: 79,
-          left: 100,
-          top: 200,
-          position: 'absolute',
-          display: 'flex',
-          flexDirection: 'column',
-          gap: 20,
-          alignItems: 'flex-start',
-        }}
-      >
-        <div style={{ textAlign: 'left' }}>
-          <span
-            style={{
-              color: 'black',
-              fontSize: 48,
-              fontFamily: 'Karla',
-              fontWeight: '700',
-            }}
-          >
-            Hi, John<br />
-          </span>
-          <span
-            style={{
-              color: 'black',
-              fontSize: 30,
-              fontFamily: 'Karla',
-              fontWeight: '700',
-            }}
-          >
-            What brings you here today.....
-          </span>
+
+      {/* Greeting */}
+      <div style={{ width: 711, height: 79, left: 100, top: 200, position: "absolute", display: "flex", flexDirection: "column", gap: 20, alignItems: "flex-start" }}>
+        <div style={{ textAlign: "left" }}>
+          <span style={{ fontSize: 48, fontFamily: "Karla", fontWeight: "700" }}>Hi, John<br /></span>
+          <span style={{ fontSize: 30, fontFamily: "Karla", fontWeight: "700" }}>What brings you here today.....</span>
         </div>
       </div>
-      <div
-        style={{
-          width: '200%',
-          height: '200%',
-          left: '50%',
-          top: '50%',
-          position: 'absolute',
-          transform: 'translate(-50%, -50%)',
-          borderRadius: '50%',
-          background: 'radial-gradient(circle, #54BE96 0%, rgba(255,255,255,1) 100%)',
-          opacity: 0.3,
-        }}
-      ></div>
+
+      {/* Capsule Buttons */}
       {capsuleData.map((capsule, idx) => (
-        <div key={capsule.type} style={{ position: 'absolute', left: positions[idx][0], top: positions[idx][1] }}>
-          <img src={capsule.imgSrc} alt={`${capsule.type} capsule`} style={{ width: 231, height: 150, borderRadius: 8 }} />
-          <div
-            style={{
-              width: 231,
-              height: 39,
-              textAlign: 'center',
-              color: 'black',
-              fontSize: 27,
-              fontFamily: 'Karla',
-              fontWeight: '600',
-              lineHeight: '40px',
-              marginTop: 10,
-            }}
-          >
-            {capsule.type} CAPSULE
-          </div>
-        </div>
+        <Button
+          key={capsule.type}
+          onClick={() => navigate(capsule.route)} // ✅ Navigate to capsule page
+          style={{
+            position: "absolute",
+            left: positions[idx][0],
+            top: positions[idx][1],
+            width: 231,
+            height: 189,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            background: "#54BE96",
+            color: "white",
+            fontSize: 20,
+            fontFamily: "Karla",
+            fontWeight: "600",
+            borderRadius: 10,
+            cursor: "pointer",
+          }}
+        >
+          {capsule.type} CAPSULE
+        </Button>
       ))}
     </div>
   );
