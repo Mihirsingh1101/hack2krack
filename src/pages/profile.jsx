@@ -26,16 +26,12 @@ const TimeCapsuleDashboard = () => {
       {/* Header */}
       <div style={{ width: 1240, height: 57, left: 100, top: 54, position: "absolute", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <div style={{ fontSize: 36, fontFamily: "Italiana", fontWeight: "400", lineHeight: "40px" }}>Time capsule</div>
-        <div style={{ fontSize: 18, fontFamily: "Inter", fontWeight: "700" }}>Dashboard</div>
-        <div style={{ width: 137, height: 43, padding: 12, background: "#2E9C5D", borderRadius: 12, display: "flex", justifyContent: "center", alignItems: "center" }}>
-          <div style={{ color: "white", fontSize: 14, fontFamily: "Inter", fontWeight: "500" }}>Sign up/Log in</div>
-        </div>
       </div>
 
       {/* Greeting */}
       <div style={{ width: 711, height: 79, left: 100, top: 200, position: "absolute", display: "flex", flexDirection: "column", gap: 20, alignItems: "flex-start" }}>
         <div style={{ textAlign: "left" }}>
-          <span style={{ fontSize: 48, fontFamily: "Karla", fontWeight: "700" }}>Hi, John<br /></span>
+          <span style={{ fontSize: 48, fontFamily: "Karla", fontWeight: "700" }}>Hi<br /></span>
           <span style={{ fontSize: 30, fontFamily: "Karla", fontWeight: "700" }}>What brings you here today.....</span>
         </div>
       </div>

@@ -1,87 +1,93 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import supabase from "../supabase/supabase";
 
 function App() {
-  const [videoList, setVideoList] = useState([]);
-  const [selectedVideo, setSelectedVideo] = useState(null);
+  const [videosList, setvideosList] = useState([]);
   const [unlockDate, setUnlockDate] = useState("");
-  const [currentTime, setCurrentTime] = useState(new Date());
-  const [title, setTitle] = useState("");
-  const [story, setStory] = useState("");
-  const [searchQuery, setSearchQuery] = useState("");
-  const storyRefs = useRef({});
 
   useEffect(() => {
-    fetchVideos();
-    const interval = setInterval(() => {
-      setCurrentTime(new Date());
-    }, 1000);
-    return () => clearInterval(interval);
+    fetchvideoss();
   }, []);
 
-  const fetchVideos = async () => {
+  const fetchvideoss = async () => {
     const { data, error } = await supabase.from("videos").select("*");
     if (error) {
       console.log("Error fetching videos: ", error);
     } else {
-      setVideoList(data);
+      setvideosList(data);
     }
   };
 
-  const uploadVideo = async (event) => {
-    const file = event.target.files[0];
-    if (!file) return;
-
-    const filePath = `videos/${file.name}`;
-    const { data, error } = await supabase.storage
-      .from("videos")
-      .upload(filePath, file);
-
-    if (error) {
-      console.log("Error uploading video: ", error);
+  const uploadvideos = async (event) => {
+    if (!event.target.files || event.target.files.length === 0) {
+      console.error("No file selected!");
       return;
     }
 
-    const { data: publicURLData } = await supabase.storage.from("videos").getPublicUrl(filePath);
+    const file = event.target.files[0];
+    const filePath = `videos/${file.name}`;
+    const { data, error } = await supabase.storage.from("videos").upload(filePath, file);
+
+    if (error) {
+      console.log("Error uploading videos: ", error);
+      return;
+    }
+
+    const { data: publicURLData, error: urlError } = await supabase.storage
+      .from("videos")
+      .getPublicUrl(filePath);
+
+    if (urlError) {
+      console.log("Error getting public URL: ", urlError);
+      return;
+    }
+
     const publicURL = publicURLData.publicUrl;
-    saveVideoMetadata(publicURL, unlockDate);
+    savevideosMetadata(publicURL, unlockDate);
   };
 
-  const saveVideoMetadata = async (videoUrl, unlockDate) => {
+  const savevideosMetadata = async (videosUrl, unlockDate) => {
     const { data, error } = await supabase.from("videos").insert([
-      { url: videoUrl, unlock_date: unlockDate },
+      { url: videosUrl, unlock_date: unlockDate },
     ]);
     if (error) {
       console.log("Error saving metadata: ", error);
     } else {
-      setVideoList((prev) => [...prev, { url: videoUrl, unlock_date: unlockDate }]);
+      setvideosList((prev) => [...prev, { url: videosUrl, unlock_date: unlockDate }]);
     }
   };
 
+  const lockedvideoss = videosList.filter(videos => new Date(videos.unlock_date) > new Date());
+  const unlockedvideoss = videosList.filter(videos => new Date(videos.unlock_date) <= new Date());
+
   return (
     <div>
-      <h1>Time Capsule</h1>
-
-      {/* Video Upload Section */}
-      <h2>Upload a Video</h2>
-      <input type="file" accept="video/*" onChange={uploadVideo} />
-      <input type="datetime-local" value={unlockDate} onChange={(e) => setUnlockDate(e.target.value)} />
-      <button>Upload Video</button>
-
-      {/* Locked and Unlocked Videos */}
-      <h2>Videos</h2>
+      <h1>videos Time Capsule</h1>
+      <div>
+        <input type="file" accept="video/*" onChange={uploadvideos} />
+        <input
+          type="datetime-local"
+          value={unlockDate}
+          onChange={(e) => setUnlockDate(e.target.value)}
+        />
+        <button>Upload videos</button>
+      </div>
+      <h2>Unlocked videoss</h2>
       <ul>
-        {videoList.map((video, index) => (
+        {unlockedvideoss.map((videos, index) => (
           <li key={index}>
-            {new Date(video.unlock_date) <= currentTime ? (
-              <video controls width="200" src={video.url} />
-            ) : (
-              <p>Locked until: {new Date(video.unlock_date).toLocaleString()}</p>
-            )}
+            <video src={videos.url} controls width="200" />
           </li>
         ))}
       </ul>
-
+      <h2>Locked videoss</h2>
+      <ul>
+        {lockedvideoss.map((videos, index) => (
+          <li key={index}>
+            <p>Locked until: {new Date(videos.unlock_date).toLocaleString()}</p>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
